@@ -6,23 +6,12 @@ using System.Threading.Tasks;
 
 namespace Homework2
 {
-    public class Homework2
+    public partial class Homework2
     {
         public static void Task1()
         {
-
+            Console.WriteLine("WORK HARD! PLAY HARD");
         }
-        public static void Task2()
-        {
 
-        }
-        public static void Task3()
-        {
-
-        }
-        public static void Task4()
-        {
-
-        }
     }
 }

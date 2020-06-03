@@ -43,7 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Homework2.cs" />
+    <Compile Include="1Minimal.cs" />
+    <Compile Include="1Numbers.cs" />
+    <Compile Include="3IsNull.cs" />
+    <Compile Include="4Autorisation.cs" />
+    <Compile Include="5BMI.cs" />
+    <Compile Include="6GoodNumbers.cs" />
+    <Compile Include="7Recursion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
