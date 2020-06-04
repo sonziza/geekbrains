@@ -1,8 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+/// <summary>
+/// Сахаров Олег
+/// Домашняя работа номер 2
+/// </summary>
+
 
 namespace Homework2
 {
@@ -13,6 +15,11 @@ namespace Homework2
 
             Console.WriteLine("1 - task 1");
             Console.WriteLine("2 - task 2");
+            Console.WriteLine("3 - task 3");
+            Console.WriteLine("4 - task 4");
+            Console.WriteLine("5 - task 5");
+            Console.WriteLine("6 - task 6");
+            Console.WriteLine("Esc - quit");
             ConsoleKeyInfo keyInfo = Console.ReadKey();
             Console.WriteLine();
             return keyInfo.Key;
@@ -23,6 +30,7 @@ namespace Homework2
             ConsoleKey key;
             do
             {
+                Console.Clear();
                 key = Menu();
                 switch (key)
                 {
@@ -34,6 +42,18 @@ namespace Homework2
                     case ConsoleKey.D2:
                         Homework2.Task2();
                         break;
+                    case ConsoleKey.NumPad3:
+                    case ConsoleKey.D3:
+                        Homework2.Task3();
+                        break;
+                    case ConsoleKey.NumPad4:
+                    case ConsoleKey.D4:
+                        Homework2.Task4();
+                        break;
+                    case ConsoleKey.NumPad5:
+                    case ConsoleKey.D5:
+                        Homework2.Task5();
+                        break;
                     case ConsoleKey.Escape:
                         Console.WriteLine("Bye-bye");
                         break;
@@ -41,6 +61,7 @@ namespace Homework2
                         Console.WriteLine("Wrong!");
                         break;
                 }
+                Console.ReadLine();
             }
             while (key != ConsoleKey.Escape);
         }
