@@ -91,7 +91,6 @@ namespace Homework3
 
         /// <summary>
         /// The sum of the fractions
-        /// TODO: find a general summary (using "for(int i = MAX; i>2; i--)" -> to the new method!)
         /// </summary>
         /// <param name="f1">first fraction</param>
         /// <param name="f2">second fraction</param>
@@ -178,10 +177,10 @@ namespace Homework3
         {
             Fraction frac1 = NewFraction();
             Fraction frac2 = NewFraction();
+            Console.Clear();
             frac1.Display();
             frac2.Display();
             Console.ReadLine();
-            Console.Clear();
 
             //Let's run operations
             Fraction fracSum = Fraction.Sum(frac1, frac2);
@@ -198,10 +197,7 @@ namespace Homework3
 
             Fraction fracDiv = Fraction.Div(frac1, frac2);
             Console.WriteLine("DIVIDING:");
-            fracDiv.Display();
-
-
-
+            fracDiv.Display();                      
 
         }
 
