@@ -1,0 +1,13 @@
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework3\obj\Debug\Homework3.csprojAssemblyReference.cache
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework3\bin\Debug\Homework3.exe.config
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework3\bin\Debug\Homework3.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework3\bin\Debug\Homework3.pdb
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework3\obj\Debug\Homework3.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework3\obj\Debug\Homework3.pdb
+C:\Users\сахаров1\source\repos\SakharovCS\Homework3\obj\Debug\Homework3.csprojAssemblyReference.cache
+C:\Users\сахаров1\source\repos\SakharovCS\Homework3\obj\Debug\Homework3.csproj.CoreCompileInputs.cache
+C:\Users\сахаров1\source\repos\SakharovCS\Homework3\obj\Debug\Homework3.exe
+C:\Users\сахаров1\source\repos\SakharovCS\Homework3\obj\Debug\Homework3.pdb
+C:\Users\сахаров1\source\repos\SakharovCS\Homework3\bin\Debug\Homework3.exe.config
+C:\Users\сахаров1\source\repos\SakharovCS\Homework3\bin\Debug\Homework3.exe
+C:\Users\сахаров1\source\repos\SakharovCS\Homework3\bin\Debug\Homework3.pdb
