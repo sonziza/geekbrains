@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Homework3
 {
@@ -12,14 +8,7 @@ namespace Homework3
         private int denomerator;
         public int Nominator
         {
-            get 
-            {
-                return nomerator;
-            }
-            set
-            {                
-                nomerator = value;
-            }
+            get; set;
         }
         public int Denominator
         {
@@ -31,7 +20,7 @@ namespace Homework3
             {
                 if (value == 0)
                 {
-                    throw new ArgumentException(String.Format("ЧИСЛО НЕ ДОЛЖНО РАВНЯТЬСЯ 0!", value));
+                    throw new ArgumentException(String.Format("ЗНАМЕНАТЕЛЬ НЕ ДОЛЖЕН РАВНЯТЬСЯ 0!", value));
                 }
                 else
                 {
@@ -60,17 +49,36 @@ namespace Homework3
         public void Display()
         {
             //get a simply fraction
-            int i = this.Denominator;
-            while(i > 1)
-            {
-                if (this.Denominator%i == 0 && this.Nominator % i == 0)
-                {
-                    this.Denominator /= i;
-                    this.Nominator /= i;
+            //int i = this.Denominator;
+            //while(i > 1)
+            //{
+            //    if (this.Denominator%i == 0 && this.Nominator % i == 0)
+            //    {
+            //        this.Denominator /= i;
+            //        this.Nominator /= i;
 
+            //    }
+            //    i--;
+            //}
+
+            // while (a <> 0) and(b <> 0) do if a >= b then a := a mod b else b:= b mod a; write(a + b)
+            int a = Math.Abs(this.Nominator);
+            int b = Math.Abs(this.Denominator);
+            while (a != 0 && b != 0)
+            {
+                if (a >= b)
+                {
+                    a %= b;
                 }
-                i--;
+                else
+                {
+                    b %= a;
+                }
             }
+            this.Nominator /= (a + b);
+            this.Denominator /= (a + b);
+
+
 
             //get whole number
             int wholeNimber = 0;
@@ -159,9 +167,6 @@ namespace Homework3
             };
             return f3;
         }
-
-
-
     }
     public partial class Homework3
     {

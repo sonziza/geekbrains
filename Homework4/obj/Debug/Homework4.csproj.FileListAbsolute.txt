@@ -1,0 +1,6 @@
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework4\bin\Debug\Homework4.exe.config
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework4\bin\Debug\Homework4.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework4\bin\Debug\Homework4.pdb
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework4\obj\Debug\Homework4.csprojAssemblyReference.cache
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework4\obj\Debug\Homework4.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework4\obj\Debug\Homework4.pdb
