@@ -2,14 +2,6 @@
 
 namespace Homework4
 {
-    /// <summary>
-    /// 1. Дан целочисленный массив из 20 элементов. Элементы массива могут 
-    /// принимать целые значения от –10 000 до 10 000 включительно. Написать 
-    /// программу, позволяющую найти и вывести количество пар элементов массива, 
-    /// в которых хотя бы одно число делится на 3. В данной задаче под парой 
-    /// подразумевается два подряд идущих элемента массива. Например, для массива 
-    /// из пяти элементов: 6; 2; 9; –3; 6 – ответ: 4.
-    /// </summary>
     public partial class Program
     {
         /// <summary>
@@ -35,7 +27,7 @@ namespace Homework4
         {
             for(int i=0; i< array.Length; i++)
             {
-                Console.WriteLine(array[i]);
+                Console.Write(array[i] + " ");
             }
         }
         /// <summary>
@@ -63,10 +55,8 @@ namespace Homework4
         {
             int[] myArray = CreateArray();
             GetArray(myArray);
+            Console.WriteLine($"\nКоличество пар элементов, делящихся на 3: {GetPairs(myArray)}");
             Console.ReadLine();
-            Console.WriteLine($"\n\n {GetPairs(myArray)}");
-            Console.ReadLine();
-
         }
     }
     class Pairs
