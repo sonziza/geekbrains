@@ -4,3 +4,16 @@ C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\Sak
 C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework4\obj\Debug\Homework4.csprojAssemblyReference.cache
 C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework4\obj\Debug\Homework4.exe
 C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS\Homework4\obj\Debug\Homework4.pdb
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework4\bin\Debug\Homework4.exe.config
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework4\bin\Debug\Homework4.exe
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework4\bin\Debug\Homework4.pdb
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework4\obj\Debug\Homework4.csprojAssemblyReference.cache
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework4\obj\Debug\Homework4.csproj.CoreCompileInputs.cache
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework4\obj\Debug\Homework4.exe
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework4\obj\Debug\Homework4.pdb
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework4\bin\Debug\Homework4.exe.config
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework4\bin\Debug\Homework4.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework4\bin\Debug\Homework4.pdb
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework4\obj\Debug\Homework4.csprojAssemblyReference.cache
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework4\obj\Debug\Homework4.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework4\obj\Debug\Homework4.pdb

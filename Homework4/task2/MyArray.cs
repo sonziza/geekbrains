@@ -59,6 +59,7 @@ namespace Homework4
             get
             {
                 int maxcount = 0;
+                
                 int max = a[0];
                 for (int i = 1; i < a.Length; i++)
                 {
