@@ -4,3 +4,10 @@ C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\Sak
 C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework5\bin\Debug\Homework5.pdb
 C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework5\obj\Debug\Homework5.exe
 C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework5\obj\Debug\Homework5.pdb
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework5\bin\Debug\Homework5.exe.config
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework5\bin\Debug\Homework5.exe
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework5\bin\Debug\Homework5.pdb
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework5\obj\Debug\Homework5.csprojAssemblyReference.cache
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework5\obj\Debug\Homework5.csproj.CoreCompileInputs.cache
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework5\obj\Debug\Homework5.exe
+C:\Users\сахаров1\source\repos\geekbrains-master\Homework5\obj\Debug\Homework5.pdb

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D3BB5F78-B6EA-4D5B-92DB-F076113784EE}</ProjectGuid>
+    <ProjectGuid>{19B18AEA-B9FD-4139-ABD5-678F2D13A18F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Homework5</RootNamespace>
     <AssemblyName>Homework5</AssemblyName>
@@ -43,15 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
+    <Compile Include="task3\IsSame.cs" />
+    <Compile Include="task1\Account.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="task2\Message.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="task1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

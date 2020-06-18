@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace Homework5
 {
@@ -44,7 +47,7 @@ namespace Homework5
     {
         static void Task1()
         {
-            Console.WriteLine("Придумайте логин. Внимание, логин должен содержать цифры и латинские, а также начинаться только с буквы");
+            Console.WriteLine("Придумайте логин. Внимание, логин должен содержать цифры и латинские буквы и начинаться только с буквы");
             string userLogin = Console.ReadLine();
             Console.WriteLine("Введите пароль");
             string userPassword = Account.HidePassword();
