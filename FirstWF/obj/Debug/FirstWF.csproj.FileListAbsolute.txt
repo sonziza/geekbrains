@@ -1,0 +1,19 @@
+C:\Users\zaaza\Desktop\CS-1\FirstWF\bin\Debug\FirstWF.exe.config
+C:\Users\zaaza\Desktop\CS-1\FirstWF\bin\Debug\FirstWF.exe
+C:\Users\zaaza\Desktop\CS-1\FirstWF\bin\Debug\FirstWF.pdb
+C:\Users\zaaza\Desktop\CS-1\FirstWF\obj\Debug\FirstWF.csprojAssemblyReference.cache
+C:\Users\zaaza\Desktop\CS-1\FirstWF\obj\Debug\FirstWF.Properties.Resources.resources
+C:\Users\zaaza\Desktop\CS-1\FirstWF\obj\Debug\FirstWF.csproj.GenerateResource.cache
+C:\Users\zaaza\Desktop\CS-1\FirstWF\obj\Debug\FirstWF.csproj.CoreCompileInputs.cache
+C:\Users\zaaza\Desktop\CS-1\FirstWF\obj\Debug\FirstWF.exe
+C:\Users\zaaza\Desktop\CS-1\FirstWF\obj\Debug\FirstWF.pdb
+C:\Users\zaaza\Desktop\CS-1\FirstWF\obj\Debug\FirstWF.Form1.resources
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\CS-1\FirstWF\bin\Debug\FirstWF.exe.config
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\CS-1\FirstWF\bin\Debug\FirstWF.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\CS-1\FirstWF\bin\Debug\FirstWF.pdb
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\CS-1\FirstWF\obj\Debug\FirstWF.csprojAssemblyReference.cache
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\CS-1\FirstWF\obj\Debug\FirstWF.Form1.resources
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\CS-1\FirstWF\obj\Debug\FirstWF.Properties.Resources.resources
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\CS-1\FirstWF\obj\Debug\FirstWF.csproj.GenerateResource.cache
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\CS-1\FirstWF\obj\Debug\FirstWF.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\CS-1\FirstWF\obj\Debug\FirstWF.pdb

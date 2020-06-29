@@ -1,0 +1,9 @@
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework7\bin\Debug\Homework7.exe.config
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework7\bin\Debug\Homework7.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework7\bin\Debug\Homework7.pdb
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework7\obj\Debug\Homework7.csprojAssemblyReference.cache
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework7\obj\Debug\Homework7.Form1.resources
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework7\obj\Debug\Homework7.Properties.Resources.resources
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework7\obj\Debug\Homework7.csproj.GenerateResource.cache
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework7\obj\Debug\Homework7.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework7\obj\Debug\Homework7.pdb
