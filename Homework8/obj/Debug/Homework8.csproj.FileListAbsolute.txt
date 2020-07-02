@@ -1,0 +1,10 @@
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\bin\Debug\Homework8.exe.config
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\bin\Debug\Homework8.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\bin\Debug\Homework8.pdb
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.csprojAssemblyReference.cache
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.Properties.Resources.resources
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.csproj.GenerateResource.cache
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.exe
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.pdb
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.frmTaxi.resources
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.Form2.resources
