@@ -70,10 +70,10 @@
             this.вставкаToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.справкаToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.tsbAdd = new System.Windows.Forms.ToolStripButton();
+            this.tsbDelete = new System.Windows.Forms.ToolStripButton();
+            this.tsbPrev = new System.Windows.Forms.ToolStripButton();
+            this.tsbNext = new System.Windows.Forms.ToolStripButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblName = new System.Windows.Forms.Label();
             this.txtPark = new System.Windows.Forms.TextBox();
@@ -83,6 +83,7 @@
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.lblMail = new System.Windows.Forms.Label();
             this.txtMail = new System.Windows.Forms.TextBox();
+            this.tsIndex = new System.Windows.Forms.ToolStripTextBox();
             this.msMainMenu.SuspendLayout();
             this.tsToolMenu.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -127,6 +128,7 @@
             this.создатьToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.создатьToolStripMenuItem.Size = new System.Drawing.Size(294, 26);
             this.создатьToolStripMenuItem.Text = "&Создать";
+            this.создатьToolStripMenuItem.Click += new System.EventHandler(this.создатьToolStripMenuItem_Click);
             // 
             // открытьToolStripMenuItem
             // 
@@ -136,6 +138,7 @@
             this.открытьToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.открытьToolStripMenuItem.Size = new System.Drawing.Size(294, 26);
             this.открытьToolStripMenuItem.Text = "&Открыть";
+            this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
@@ -156,6 +159,7 @@
             this.сохранитькакToolStripMenuItem.Name = "сохранитькакToolStripMenuItem";
             this.сохранитькакToolStripMenuItem.Size = new System.Drawing.Size(294, 26);
             this.сохранитькакToolStripMenuItem.Text = "Сохранить &как";
+            this.сохранитькакToolStripMenuItem.Click += new System.EventHandler(this.сохранитькакToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -339,10 +343,11 @@
             this.вставкаToolStripButton,
             this.toolStripSeparator7,
             this.справкаToolStripButton,
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3,
-            this.toolStripButton4});
+            this.tsbAdd,
+            this.tsbDelete,
+            this.tsbPrev,
+            this.tsbNext,
+            this.tsIndex});
             this.tsToolMenu.Location = new System.Drawing.Point(0, 28);
             this.tsToolMenu.Name = "tsToolMenu";
             this.tsToolMenu.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -366,6 +371,7 @@
             this.открытьToolStripButton.Name = "открытьToolStripButton";
             this.открытьToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.открытьToolStripButton.Text = "&Открыть";
+            this.открытьToolStripButton.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
             // 
             // сохранитьToolStripButton
             // 
@@ -375,6 +381,7 @@
             this.сохранитьToolStripButton.Name = "сохранитьToolStripButton";
             this.сохранитьToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.сохранитьToolStripButton.Text = "&Сохранить";
+            this.сохранитьToolStripButton.Click += new System.EventHandler(this.сохранитькакToolStripMenuItem_Click);
             // 
             // печатьToolStripButton
             // 
@@ -430,42 +437,45 @@
             this.справкаToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.справкаToolStripButton.Text = "Спр&авка";
             // 
-            // toolStripButton1
+            // tsbAdd
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
-            this.toolStripButton1.Text = "+";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.tsbAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbAdd.Image = ((System.Drawing.Image)(resources.GetObject("tsbAdd.Image")));
+            this.tsbAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbAdd.Name = "tsbAdd";
+            this.tsbAdd.Size = new System.Drawing.Size(29, 24);
+            this.tsbAdd.Text = "+";
+            this.tsbAdd.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // toolStripButton2
+            // tsbDelete
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(29, 24);
-            this.toolStripButton2.Text = "-";
+            this.tsbDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbDelete.Image = ((System.Drawing.Image)(resources.GetObject("tsbDelete.Image")));
+            this.tsbDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbDelete.Name = "tsbDelete";
+            this.tsbDelete.Size = new System.Drawing.Size(29, 24);
+            this.tsbDelete.Text = "-";
+            this.tsbDelete.Click += new System.EventHandler(this.tsbDelete_Click);
             // 
-            // toolStripButton3
+            // tsbPrev
             // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(29, 24);
-            this.toolStripButton3.Text = "<-";
+            this.tsbPrev.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbPrev.Image = ((System.Drawing.Image)(resources.GetObject("tsbPrev.Image")));
+            this.tsbPrev.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbPrev.Name = "tsbPrev";
+            this.tsbPrev.Size = new System.Drawing.Size(29, 24);
+            this.tsbPrev.Text = "<-";
+            this.tsbPrev.Click += new System.EventHandler(this.tsbPrev_Click);
             // 
-            // toolStripButton4
+            // tsbNext
             // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(29, 24);
-            this.toolStripButton4.Text = "->";
+            this.tsbNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbNext.Image = ((System.Drawing.Image)(resources.GetObject("tsbNext.Image")));
+            this.tsbNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbNext.Name = "tsbNext";
+            this.tsbNext.Size = new System.Drawing.Size(29, 24);
+            this.tsbNext.Text = "->";
+            this.tsbNext.Click += new System.EventHandler(this.tsbNext_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -556,6 +566,12 @@
             this.txtMail.Size = new System.Drawing.Size(270, 22);
             this.txtMail.TabIndex = 7;
             // 
+            // tsIndex
+            // 
+            this.tsIndex.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tsIndex.Name = "tsIndex";
+            this.tsIndex.Size = new System.Drawing.Size(100, 27);
+            // 
             // frmTaxi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -632,10 +648,11 @@
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.TextBox txtMail;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton tsbAdd;
+        private System.Windows.Forms.ToolStripButton tsbDelete;
+        private System.Windows.Forms.ToolStripButton tsbPrev;
+        private System.Windows.Forms.ToolStripButton tsbNext;
+        private System.Windows.Forms.ToolStripTextBox tsIndex;
     }
 }
 

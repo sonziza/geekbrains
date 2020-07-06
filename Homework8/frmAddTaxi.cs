@@ -21,6 +21,15 @@ namespace Homework8
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.OK;
+            Taxi.Name = txtParkNew.Text;
+            Taxi.Adress = txtAdressNew.Text;
+            Taxi.Phone = txtPhoneNew.Text;
+            Taxi.Email = txtMailNew.Text;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
 
         }
     }

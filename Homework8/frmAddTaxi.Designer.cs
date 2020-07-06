@@ -69,6 +69,7 @@
             this.btnCancel.TabIndex = 34;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
@@ -152,13 +153,13 @@
             this.lblMail.TabIndex = 31;
             this.lblMail.Text = "Почта";
             // 
-            // Form2
+            // frmAddTaxi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(469, 167);
             this.Controls.Add(this.panel1);
-            this.Name = "Form2";
+            this.Name = "frmAddTaxi";
             this.Text = "Новый элемент базы даннных";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
