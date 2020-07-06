@@ -7,4 +7,4 @@ C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\Sak
 C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.exe
 C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.pdb
 C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.frmTaxi.resources
-C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.Form2.resources
+C:\Users\sahar\OneDrive\Документы\Visual Studio projects\geekbrains\SakharovCS1\Homework8\obj\Debug\Homework8.frmAddTaxi.resources

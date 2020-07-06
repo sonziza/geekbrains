@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTaxi));
             this.msMainMenu = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,18 +70,10 @@
             this.вставкаToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.справкаToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.bnNavMenu = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblName = new System.Windows.Forms.Label();
             this.txtPark = new System.Windows.Forms.TextBox();
@@ -94,8 +85,6 @@
             this.txtMail = new System.Windows.Forms.TextBox();
             this.msMainMenu.SuspendLayout();
             this.tsToolMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bnNavMenu)).BeginInit();
-            this.bnNavMenu.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,7 +98,7 @@
             this.справкаToolStripMenuItem});
             this.msMainMenu.Location = new System.Drawing.Point(0, 0);
             this.msMainMenu.Name = "msMainMenu";
-            this.msMainMenu.Size = new System.Drawing.Size(384, 30);
+            this.msMainMenu.Size = new System.Drawing.Size(699, 28);
             this.msMainMenu.TabIndex = 0;
             this.msMainMenu.Text = "Главное меню";
             // 
@@ -200,6 +189,7 @@
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(294, 26);
             this.выходToolStripMenuItem.Text = "Вы&ход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // правкаToolStripMenuItem
             // 
@@ -337,7 +327,6 @@
             // 
             // tsToolMenu
             // 
-            this.tsToolMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.tsToolMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tsToolMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.создатьToolStripButton,
@@ -349,11 +338,15 @@
             this.копироватьToolStripButton,
             this.вставкаToolStripButton,
             this.toolStripSeparator7,
-            this.справкаToolStripButton});
-            this.tsToolMenu.Location = new System.Drawing.Point(0, 30);
+            this.справкаToolStripButton,
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3,
+            this.toolStripButton4});
+            this.tsToolMenu.Location = new System.Drawing.Point(0, 28);
             this.tsToolMenu.Name = "tsToolMenu";
             this.tsToolMenu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsToolMenu.Size = new System.Drawing.Size(30, 251);
+            this.tsToolMenu.Size = new System.Drawing.Size(699, 27);
             this.tsToolMenu.TabIndex = 1;
             this.tsToolMenu.Text = "Панель инструментов";
             // 
@@ -362,7 +355,7 @@
             this.создатьToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.создатьToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.создатьToolStripButton.Name = "создатьToolStripButton";
-            this.создатьToolStripButton.Size = new System.Drawing.Size(27, 4);
+            this.создатьToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.создатьToolStripButton.Text = "&Создать";
             // 
             // открытьToolStripButton
@@ -371,7 +364,7 @@
             this.открытьToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("открытьToolStripButton.Image")));
             this.открытьToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.открытьToolStripButton.Name = "открытьToolStripButton";
-            this.открытьToolStripButton.Size = new System.Drawing.Size(27, 24);
+            this.открытьToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.открытьToolStripButton.Text = "&Открыть";
             // 
             // сохранитьToolStripButton
@@ -380,7 +373,7 @@
             this.сохранитьToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("сохранитьToolStripButton.Image")));
             this.сохранитьToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.сохранитьToolStripButton.Name = "сохранитьToolStripButton";
-            this.сохранитьToolStripButton.Size = new System.Drawing.Size(27, 24);
+            this.сохранитьToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.сохранитьToolStripButton.Text = "&Сохранить";
             // 
             // печатьToolStripButton
@@ -389,20 +382,20 @@
             this.печатьToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("печатьToolStripButton.Image")));
             this.печатьToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.печатьToolStripButton.Name = "печатьToolStripButton";
-            this.печатьToolStripButton.Size = new System.Drawing.Size(27, 24);
+            this.печатьToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.печатьToolStripButton.Text = "&Печать";
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
             // 
             // вырезатьToolStripButton
             // 
             this.вырезатьToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.вырезатьToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.вырезатьToolStripButton.Name = "вырезатьToolStripButton";
-            this.вырезатьToolStripButton.Size = new System.Drawing.Size(27, 4);
+            this.вырезатьToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.вырезатьToolStripButton.Text = "В&ырезать";
             // 
             // копироватьToolStripButton
@@ -411,7 +404,7 @@
             this.копироватьToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("копироватьToolStripButton.Image")));
             this.копироватьToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.копироватьToolStripButton.Name = "копироватьToolStripButton";
-            this.копироватьToolStripButton.Size = new System.Drawing.Size(27, 24);
+            this.копироватьToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.копироватьToolStripButton.Text = "&Копировать";
             // 
             // вставкаToolStripButton
@@ -420,13 +413,13 @@
             this.вставкаToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("вставкаToolStripButton.Image")));
             this.вставкаToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.вставкаToolStripButton.Name = "вставкаToolStripButton";
-            this.вставкаToolStripButton.Size = new System.Drawing.Size(27, 24);
+            this.вставкаToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.вставкаToolStripButton.Text = "Вст&авка";
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 27);
             // 
             // справкаToolStripButton
             // 
@@ -434,123 +427,45 @@
             this.справкаToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("справкаToolStripButton.Image")));
             this.справкаToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.справкаToolStripButton.Name = "справкаToolStripButton";
-            this.справкаToolStripButton.Size = new System.Drawing.Size(27, 24);
+            this.справкаToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.справкаToolStripButton.Text = "Спр&авка";
             // 
-            // bnNavMenu
+            // toolStripButton1
             // 
-            this.bnNavMenu.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bnNavMenu.CountItem = this.bindingNavigatorCountItem;
-            this.bnNavMenu.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.bnNavMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.bnNavMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem});
-            this.bnNavMenu.Location = new System.Drawing.Point(30, 30);
-            this.bnNavMenu.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bnNavMenu.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bnNavMenu.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bnNavMenu.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bnNavMenu.Name = "bnNavMenu";
-            this.bnNavMenu.PositionItem = this.bindingNavigatorPositionItem;
-            this.bnNavMenu.Size = new System.Drawing.Size(354, 31);
-            this.bnNavMenu.TabIndex = 3;
-            this.bnNavMenu.Text = "Меню навигации";
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton1.Text = "+";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // bindingNavigatorAddNewItem
+            // toolStripButton2
             // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton2.Text = "-";
             // 
-            // bindingNavigatorCountItem
+            // toolStripButton3
             // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton3.Text = "<-";
             // 
-            // bindingNavigatorDeleteItem
+            // toolStripButton4
             // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton4.Text = "->";
             // 
             // flowLayoutPanel1
             // 
@@ -564,9 +479,9 @@
             this.flowLayoutPanel1.Controls.Add(this.lblMail);
             this.flowLayoutPanel1.Controls.Add(this.txtMail);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(30, 61);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 55);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(354, 220);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(699, 87);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // lblName
@@ -591,17 +506,16 @@
             // 
             this.lblAdress.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblAdress.AutoSize = true;
-            this.lblAdress.Location = new System.Drawing.Point(3, 33);
+            this.lblAdress.Location = new System.Drawing.Point(335, 5);
             this.lblAdress.Name = "lblAdress";
             this.lblAdress.Size = new System.Drawing.Size(48, 17);
             this.lblAdress.TabIndex = 2;
             this.lblAdress.Text = "Адрес";
-            this.lblAdress.Click += new System.EventHandler(this.lblAdress_Click);
             // 
             // txtAdress
             // 
             this.txtAdress.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtAdress.Location = new System.Drawing.Point(57, 31);
+            this.txtAdress.Location = new System.Drawing.Point(389, 3);
             this.txtAdress.Name = "txtAdress";
             this.txtAdress.Size = new System.Drawing.Size(271, 22);
             this.txtAdress.TabIndex = 3;
@@ -610,7 +524,7 @@
             // 
             this.lblPhone.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(3, 61);
+            this.lblPhone.Location = new System.Drawing.Point(3, 33);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(68, 17);
             this.lblPhone.TabIndex = 4;
@@ -619,7 +533,7 @@
             // txtPhone
             // 
             this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtPhone.Location = new System.Drawing.Point(77, 59);
+            this.txtPhone.Location = new System.Drawing.Point(77, 31);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(252, 22);
             this.txtPhone.TabIndex = 5;
@@ -628,7 +542,7 @@
             // 
             this.lblMail.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblMail.AutoSize = true;
-            this.lblMail.Location = new System.Drawing.Point(3, 89);
+            this.lblMail.Location = new System.Drawing.Point(335, 33);
             this.lblMail.Name = "lblMail";
             this.lblMail.Size = new System.Drawing.Size(49, 17);
             this.lblMail.TabIndex = 6;
@@ -637,7 +551,7 @@
             // txtMail
             // 
             this.txtMail.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtMail.Location = new System.Drawing.Point(58, 87);
+            this.txtMail.Location = new System.Drawing.Point(390, 31);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(270, 22);
             this.txtMail.TabIndex = 7;
@@ -647,21 +561,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(384, 281);
+            this.ClientSize = new System.Drawing.Size(699, 142);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.bnNavMenu);
             this.Controls.Add(this.tsToolMenu);
             this.Controls.Add(this.msMainMenu);
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "frmTaxi";
             this.Text = "Таксопарк";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTaxi_FormClosing);
             this.msMainMenu.ResumeLayout(false);
             this.msMainMenu.PerformLayout();
             this.tsToolMenu.ResumeLayout(false);
             this.tsToolMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bnNavMenu)).EndInit();
-            this.bnNavMenu.ResumeLayout(false);
-            this.bnNavMenu.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -712,18 +623,6 @@
         private System.Windows.Forms.ToolStripButton вставкаToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripButton справкаToolStripButton;
-        private System.Windows.Forms.BindingNavigator bnNavMenu;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox txtPark;
@@ -733,6 +632,10 @@
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.TextBox txtMail;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
     }
 }
 

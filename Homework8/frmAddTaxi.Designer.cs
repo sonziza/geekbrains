@@ -1,6 +1,6 @@
 ﻿namespace Homework8
 {
-    partial class Form2
+    partial class frmAddTaxi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtPhoneNew = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtMailNew = new System.Windows.Forms.TextBox();
-            this.txtParkNew = new System.Windows.Forms.TextBox();
-            this.lblMail = new System.Windows.Forms.Label();
-            this.lblAdress = new System.Windows.Forms.Label();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.txtAdressNew = new System.Windows.Forms.TextBox();
-            this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.txtPhoneNew = new System.Windows.Forms.TextBox();
+            this.txtParkNew = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtAdressNew = new System.Windows.Forms.TextBox();
+            this.txtMailNew = new System.Windows.Forms.TextBox();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.lblAdress = new System.Windows.Forms.Label();
+            this.lblMail = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,25 @@
             this.panel1.Size = new System.Drawing.Size(469, 167);
             this.panel1.TabIndex = 16;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(359, 74);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 39);
+            this.btnCancel.TabIndex = 34;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(359, 12);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 39);
+            this.btnOK.TabIndex = 33;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
             // txtPhoneNew
             // 
             this.txtPhoneNew.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -68,6 +87,14 @@
             this.txtPhoneNew.Name = "txtPhoneNew";
             this.txtPhoneNew.Size = new System.Drawing.Size(252, 22);
             this.txtPhoneNew.TabIndex = 30;
+            // 
+            // txtParkNew
+            // 
+            this.txtParkNew.Location = new System.Drawing.Point(84, 12);
+            this.txtParkNew.Name = "txtParkNew";
+            this.txtParkNew.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtParkNew.Size = new System.Drawing.Size(252, 22);
+            this.txtParkNew.TabIndex = 26;
             // 
             // lblName
             // 
@@ -79,6 +106,14 @@
             this.lblName.TabIndex = 25;
             this.lblName.Text = "Парк";
             // 
+            // txtAdressNew
+            // 
+            this.txtAdressNew.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.txtAdressNew.Location = new System.Drawing.Point(83, 42);
+            this.txtAdressNew.Name = "txtAdressNew";
+            this.txtAdressNew.Size = new System.Drawing.Size(251, 22);
+            this.txtAdressNew.TabIndex = 28;
+            // 
             // txtMailNew
             // 
             this.txtMailNew.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -86,34 +121,6 @@
             this.txtMailNew.Name = "txtMailNew";
             this.txtMailNew.Size = new System.Drawing.Size(251, 22);
             this.txtMailNew.TabIndex = 32;
-            // 
-            // txtParkNew
-            // 
-            this.txtParkNew.Location = new System.Drawing.Point(84, 12);
-            this.txtParkNew.Name = "txtParkNew";
-            this.txtParkNew.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtParkNew.Size = new System.Drawing.Size(252, 22);
-            this.txtParkNew.TabIndex = 26;
-            // 
-            // lblMail
-            // 
-            this.lblMail.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblMail.AutoSize = true;
-            this.lblMail.Location = new System.Drawing.Point(7, 102);
-            this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(49, 17);
-            this.lblMail.TabIndex = 31;
-            this.lblMail.Text = "Почта";
-            // 
-            // lblAdress
-            // 
-            this.lblAdress.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblAdress.AutoSize = true;
-            this.lblAdress.Location = new System.Drawing.Point(7, 46);
-            this.lblAdress.Name = "lblAdress";
-            this.lblAdress.Size = new System.Drawing.Size(48, 17);
-            this.lblAdress.TabIndex = 27;
-            this.lblAdress.Text = "Адрес";
             // 
             // lblPhone
             // 
@@ -125,31 +132,25 @@
             this.lblPhone.TabIndex = 29;
             this.lblPhone.Text = "Телефон";
             // 
-            // txtAdressNew
+            // lblAdress
             // 
-            this.txtAdressNew.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtAdressNew.Location = new System.Drawing.Point(83, 42);
-            this.txtAdressNew.Name = "txtAdressNew";
-            this.txtAdressNew.Size = new System.Drawing.Size(251, 22);
-            this.txtAdressNew.TabIndex = 28;
+            this.lblAdress.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblAdress.AutoSize = true;
+            this.lblAdress.Location = new System.Drawing.Point(7, 46);
+            this.lblAdress.Name = "lblAdress";
+            this.lblAdress.Size = new System.Drawing.Size(48, 17);
+            this.lblAdress.TabIndex = 27;
+            this.lblAdress.Text = "Адрес";
             // 
-            // btnOK
+            // lblMail
             // 
-            this.btnOK.Location = new System.Drawing.Point(359, 12);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 39);
-            this.btnOK.TabIndex = 33;
-            this.btnOK.Text = "OK";
-            this.btnOK.UseVisualStyleBackColor = true;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(359, 74);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 39);
-            this.btnCancel.TabIndex = 34;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.lblMail.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblMail.AutoSize = true;
+            this.lblMail.Location = new System.Drawing.Point(7, 102);
+            this.lblMail.Name = "lblMail";
+            this.lblMail.Size = new System.Drawing.Size(49, 17);
+            this.lblMail.TabIndex = 31;
+            this.lblMail.Text = "Почта";
             // 
             // Form2
             // 
